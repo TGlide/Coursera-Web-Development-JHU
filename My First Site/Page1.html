@@ -18,7 +18,8 @@
 </head>
 
 <body>
-  <audio id="audio" src="./assets/wee.mp3" autostart="false"></audio>
+  <audio id="audio" src="./assets/wee.mp3" autoplay></audio>
+  <audio id="bgsound" src="./assets/portal-radio.mp3" autoplay loop></audio>
   <script>
     function playSound() {
       var sound = document.getElementById("audio");
@@ -27,8 +28,9 @@
   </script>
 
   <a onclick="playSound();" title="Wee">
-    <h1 class="page1" font-family>weeeeeeeeeeeeeeeeeeeeeeeeeeee</h1>
+    <h2 class="page1" font-family>weeeeeeeeeeeeeeeeeeeeeeeee</h2>
   </a>
+
 </body>
 
 </html>

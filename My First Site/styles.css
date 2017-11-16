@@ -25,12 +25,61 @@ article {
     text-align: center;
 }
 
-h1.page1{
-    margin-top: 250px;
-    text-align: center;
-    font-size: 55px;
-    color: white;
+@keyframes wee {
+    10% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(36deg) rotateZ(10deg);
+        color: rgb(14, 218, 184);
+    }
+    20% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(72deg) rotateZ(10deg);
+        color: #00ffbf;
+    }
+    30% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(108deg) rotateZ(10deg);
+        color: rgb(0, 255, 34);
+    }
+    40% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(144deg) rotateZ(10deg);
+        color: rgb(238, 255, 0)
+    }
+    50% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(180deg) rotateZ(10deg);
+        color: rgb(252, 156, 11);
+    }
+    60% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(216deg) rotateZ(10deg);
+        color: rgb(252, 11, 11)
+    }
+    70% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(252deg) rotateZ(10deg);
+        color: rgb(255, 0, 221)
+    }
+    80% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(288deg) rotateZ(10deg);
+        color: rgb(132, 0, 255)
+    }
+    90% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(324deg) rotateZ(10deg);
+        color: rgb(0, 4, 255)
+    }
+    100% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(360deg) rotateZ(10deg);
+        color: rgb(11, 252, 252);
+    }
+}
+
+.page1 {
+    font-size: 45px;
+    /* margin-top: 1px; */
+    color: rgb(11, 252, 252);
     font-family: 'Oswald', sans-serif;
-    transform: rotateY(45deg) rotateX(0deg) rotateZ(45deg);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    animation-name: wee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translate(-50%, -150%) rotateX(0deg) rotateY(0deg) rotateZ(10deg);
     /* transform: rotateX(1deg); */
 }
