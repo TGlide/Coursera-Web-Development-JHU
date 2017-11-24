@@ -1,0 +1,181 @@
+/* Index */
+
+@keyframes h1_index {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1.index {
+    color: rgb(6, 92, 252);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    /* animation-name: h1_index;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    opacity: 1;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(223, 36, 12);
+}
+
+h2.index {
+    color: rgba(0, 0, 0, 0.884);
+    font-family: monospace;
+    text-align: center;
+}
+
+h3.index {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+a.index {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+/* Page 1 */
+
+@keyframes wee {
+    10% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(36deg) rotateZ(10deg);
+        color: rgb(14, 218, 184);
+    }
+    20% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(72deg) rotateZ(10deg);
+        color: #00ffbf;
+    }
+    30% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(108deg) rotateZ(10deg);
+        color: rgb(0, 255, 34);
+    }
+    40% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(144deg) rotateZ(10deg);
+        color: rgb(238, 255, 0)
+    }
+    50% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(180deg) rotateZ(10deg);
+        color: rgb(252, 156, 11);
+    }
+    60% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(216deg) rotateZ(10deg);
+        color: rgb(252, 11, 11)
+    }
+    70% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(252deg) rotateZ(10deg);
+        color: rgb(255, 0, 221)
+    }
+    80% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(288deg) rotateZ(10deg);
+        color: rgb(132, 0, 255)
+    }
+    90% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(324deg) rotateZ(10deg);
+        color: rgb(0, 4, 255)
+    }
+    100% {
+        transform: translate(-50%, -150%) rotateX(0deg) rotateY(360deg) rotateZ(10deg);
+        color: rgb(11, 252, 252);
+    }
+}
+
+.page1 {
+    font-size: 45px;
+    /* margin-top: 1px; */
+    color: rgb(11, 252, 252);
+    font-family: 'Oswald', sans-serif;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    animation-name: wee;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    transform: translate(-50%, -150%) rotateX(0deg) rotateY(0deg) rotateZ(10deg);
+    /* transform: rotateX(1deg); */
+}
+
+.page1:hover {
+    animation-name: wee;
+    animation-play-state: running;
+    /* transform: translate(-50%, -150%) rotateX(0deg) rotateY(0deg) rotateZ(10deg); */
+}
+
+
+/* Sogra */
+
+body.sogra {
+    background-color: black;
+}
+
+@keyframes sogra {
+    100% {
+        transform: translate(-50%, -55%) rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    }
+}
+
+#sogra_img {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: block;
+    animation-name: sogra;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translate(-50%, -55%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+@keyframes sogra_peca{
+    10% {
+        color: rgb(14, 218, 184);
+    }
+    20% {
+        color: #00ffbf;
+    }
+    30% {
+        color: rgb(0, 255, 34);
+    }
+    40% {
+        color: rgb(238, 255, 0)
+    }
+    50% {
+        color: rgb(252, 156, 11);
+    }
+    60% {
+        color: rgb(252, 11, 11)
+    }
+    70% {
+        color: rgb(255, 0, 221)
+    }
+    80% {
+        color: rgb(132, 0, 255)
+    }
+    90% {
+        color: rgb(0, 4, 255)
+    }
+    100% {
+        color: rgb(11, 252, 252);
+    }
+}
+h1.sogra{
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    color: rgb(11, 252, 252);
+    font-family: 'Oswald', sans-serif;
+    transform: translate(-50%, -100%);
+    animation-name: sogra_peca;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
