@@ -39,77 +39,8 @@ h3.index {
 
 a.index {
     font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
 }
-
-
-/* Page 1 */
-
-@keyframes wee {
-    10% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(36deg) rotateZ(10deg);
-        color: rgb(14, 218, 184);
-    }
-    20% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(72deg) rotateZ(10deg);
-        color: #00ffbf;
-    }
-    30% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(108deg) rotateZ(10deg);
-        color: rgb(0, 255, 34);
-    }
-    40% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(144deg) rotateZ(10deg);
-        color: rgb(238, 255, 0)
-    }
-    50% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(180deg) rotateZ(10deg);
-        color: rgb(252, 156, 11);
-    }
-    60% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(216deg) rotateZ(10deg);
-        color: rgb(252, 11, 11)
-    }
-    70% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(252deg) rotateZ(10deg);
-        color: rgb(255, 0, 221)
-    }
-    80% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(288deg) rotateZ(10deg);
-        color: rgb(132, 0, 255)
-    }
-    90% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(324deg) rotateZ(10deg);
-        color: rgb(0, 4, 255)
-    }
-    100% {
-        transform: translate(-50%, -150%) rotateX(0deg) rotateY(360deg) rotateZ(10deg);
-        color: rgb(11, 252, 252);
-    }
-}
-
-.page1 {
-    font-size: 45px;
-    /* margin-top: 1px; */
-    color: rgb(11, 252, 252);
-    font-family: 'Oswald', sans-serif;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    animation-name: wee;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-play-state: paused;
-    transform: translate(-50%, -150%) rotateX(0deg) rotateY(0deg) rotateZ(10deg);
-    /* transform: rotateX(1deg); */
-}
-
-.page1:hover {
-    animation-name: wee;
-    animation-play-state: running;
-    /* transform: translate(-50%, -150%) rotateX(0deg) rotateY(0deg) rotateZ(10deg); */
-}
-
 
 /* Sogra */
 
@@ -119,23 +50,30 @@ body.sogra {
 
 @keyframes sogra {
     100% {
-        transform: translate(-50%, -55%) rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+        transform: translate(-50%, -50%) rotateX(0deg) rotateY(360deg) rotateZ(0deg);
     }
 }
 
-#sogra_img {
+#sogra_img,
+#sogra_img_despues {
+    max-width: 70%;
+    max-height: 70%;
     position: fixed;
-    left: 50%;
+    left: 22%;
     top: 50%;
     display: block;
     animation-name: sogra;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform: translate(-50%, -55%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 
-@keyframes sogra_peca{
+#sogra_img_despues {
+    left: 80%;
+}
+
+@keyframes sogra_peca {
     10% {
         color: rgb(14, 218, 184);
     }
@@ -167,7 +105,8 @@ body.sogra {
         color: rgb(11, 252, 252);
     }
 }
-h1.sogra{
+
+h1.sogra {
     position: fixed;
     left: 50%;
     top: 90%;
@@ -175,7 +114,22 @@ h1.sogra{
     font-family: 'Oswald', sans-serif;
     transform: translate(-50%, -100%);
     animation-name: sogra_peca;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+h1.antes.sogra {
+    top: 10%;
+    left: 22%;
+}
+
+h1.despues.sogra {
+    top: 10%;
+    left: 80%;
+}
+
+h1.wow.sogra {
+    top: 50%;
+    font-size: 50px;
 }
