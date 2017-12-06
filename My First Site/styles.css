@@ -35,11 +35,21 @@ h2.index {
 h3.index {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    margin: 0px;
 }
 
-a.index {
+a.index, a.index:visited {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
+    color: blue;
+
+}
+
+ul{
+    list-style-position: inside;
+    padding-left: 0;
+    padding-top: 0px;
+    display: inline;
 }
 
 /* Sogra */
