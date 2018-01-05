@@ -1,5 +1,19 @@
 /* Index */
 
+#index_header{
+    position: fixed;
+    height: 100px;
+    border: 5px solid grey;
+}
+
+#glide_icon{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: auto;
+    float: left;
+}
+
 @keyframes h1_index {
     0% {
         opacity: 1;
@@ -14,17 +28,15 @@
 
 h1.index {
     color: rgb(6, 92, 252);
-    text-align: center;
     font-family: 'Oswald', sans-serif;
+    position: relative;
+    top: 25%;
+    left: 10px;
     /* animation-name: h1_index;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; */
-    opacity: 1;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(223, 36, 12);
-}
+    }
 
 h2.index {
     color: rgba(0, 0, 0, 0.884);
@@ -35,11 +47,21 @@ h2.index {
 h3.index {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    margin: 0px;
 }
 
-a.index {
+a.index, a.index:visited {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
+    color: blue;
+
+}
+
+ul{
+    list-style-position: inside;
+    padding-left: 0;
+    padding-top: 0px;
+    display: inline;
 }
 
 /* Sogra */
