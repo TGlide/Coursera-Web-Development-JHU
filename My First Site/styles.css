@@ -1,14 +1,68 @@
 /* Index */
 
-#index_header{
-    position: fixed;
-    height: 100px;
-    border: 5px solid grey;
+body {
+    margin: 0px;
 }
 
-#glide_icon{
+#index_nav {
+    box-sizing: border-box;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #0B1036;
+}
+
+span.line {
+    box-sizing: border-box;
     display: block;
-    position: absolute;
+    position: relative;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 75%;
+    width: 1px;
+    border: 1px solid grey;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+
+nav>h1 {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 10px 0 10px;
+    font-family: 'Century Gothic';
+    color: #FAFAFA;
+    font-weight: normal;
+    float: left;
+}
+
+nav>h1>a {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+nav>h1>a:visited {
+    text-decoration: none;
+}
+
+nav>h1>a:hover {
+    color: #C62828
+}
+
+nav>h1>a:focus {
+    text-decoration: none;
+}
+
+nav>h1>a:active {
+    text-decoration: none;
+}
+
+#glide_icon {
+    box-sizing: border-box;
+    display: block;
     height: 100%;
     width: auto;
     float: left;
@@ -30,13 +84,15 @@ h1.index {
     color: rgb(6, 92, 252);
     font-family: 'Oswald', sans-serif;
     position: relative;
-    top: 25%;
-    left: 10px;
+    margin: 0;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
     /* animation-name: h1_index;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; */
-    }
+}
 
 h2.index {
     color: rgba(0, 0, 0, 0.884);
@@ -50,19 +106,20 @@ h3.index {
     margin: 0px;
 }
 
-a.index, a.index:visited {
+a.index,
+a.index:visited {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
     color: blue;
-
 }
 
-ul{
+ul {
     list-style-position: inside;
     padding-left: 0;
     padding-top: 0px;
     display: inline;
 }
+
 
 /* Sogra */
 
