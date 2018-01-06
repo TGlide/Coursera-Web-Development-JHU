@@ -7,9 +7,9 @@ body {
 #index_nav {
     box-sizing: border-box;
     position: relative;
-    height: 100px;
+    height: 80px;
     width: 100%;
-    background-color: #0B1036;
+    background-color: #080B26;
 }
 
 span.line {
