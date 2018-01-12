@@ -148,9 +148,20 @@ span.line {
     margin-left: 5px;
     margin-right: 5px;
     float: left;
+    opacity: 0.75;
 }
 
-nav>h1 {
+#index_nav {
+    position: absolute;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    margin: 0 0 0 0;
+    /* background-color: #080B26; */
+    overflow: auto;
+}
+
+#index_nav h1 {
     display: block;
     position: relative;
     top: 50%;
@@ -163,101 +174,100 @@ nav>h1 {
 }
 
 @media (max-width: 449px) {
-    nav>h1 {
+    #index_nav h1 {
         font-size: 20px;
     }
 }
 
 @media (min-width: 450px) {
-    nav>h1 {
-        font-size: 24px;
+    #index_nav h1 {
+        font-size: 22px;
     }
 }
 
-nav>h1>a {
+#index_nav a {
     color: #FAFAFA;
     text-decoration: none;
 }
 
-nav>h1>a:visited {
+#index_nav a:visited {
     text-decoration: none;
 }
 
-nav>h1>a:hover {
+#index_nav a:hover h1{
     color: #C62828
 }
 
-nav>h1>a:focus {
+#index_nav >a:focus {
     text-decoration: none;
 }
 
-nav>h1>a:active {
+#index_nav a:active {
     text-decoration: none;
-}
-
-ul {
-    list-style-position: inside;
-    padding-left: 0;
-    padding-top: 0px;
-    display: inline;
-}
-
-#index_nav {
-    box-sizing: border-box;
-    position: relative;
-    height: 80px;
-    width: 100%;
-    background-color: #080B26;
-    overflow: auto;
 }
 
 #glide_icon {
-    box-sizing: border-box;
     display: block;
     height: 100%;
+    padding: 5px 0 5px 0;
     width: auto;
     float: left;
 }
 
-@keyframes h1_index {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+#glide_icon+h1 {
+    margin: 0 5px 0 3px;
 }
 
-h1.index {
-    color: rgb(6, 92, 252);
-    font-family: 'Oswald', sans-serif;
+#img-header {
     position: relative;
-    margin: 0;
+    width: 100%;
+    height: 550px;
+    background: red;
+}
+
+/* #img-header img {
+    display: block;
+} */
+
+#img-header>img.bg {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.intro {
+    position: absolute;
     top: 50%;
-    left: 2px;
     transform: translateY(-50%);
-    /* animation-name: h1_index;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; */
+    width: 100%;
+    height: 50%;
+    /* background-color: black; */
+    /* transform: translate(-5%, -40%); */
+    opacity: 0.75;
+    transition: 0.5s ease;
 }
 
-h2.index {
-    color: rgba(0, 0, 0, 0.884);
-    font-family: monospace;
-    text-align: center;
+.intro>img {
+    display: block;
+    position: relative;
+    width: auto;
+    height: 50%;
+    float: left;
 }
 
-h3.index {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    margin: 0px;
+.intro>p{
+    color: #FAFAFA;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    margin: 0 0 0 2px;
 }
 
-section.index {
+.intro:hover {
+    opacity: 1;
+}
+
+section.img-links {
     display: table;
     position: relative;
     width: 100%;
@@ -266,12 +276,12 @@ section.index {
     clear: both;
 }
 
-section.index>article {
+section.img-links>article {
     position: relative;
     /* background: rgba(198, 40, 40, 0.1) */
 }
 
-section.index>article>a>img {
+section.img-links>article>a>img {
     display: block;
     position: relative;
     margin: 0 auto 0 auto;
@@ -328,7 +338,7 @@ body.sogra {
 #sogra_img_despues {
     max-width: 70%;
     max-height: 70%;
-    position: fixed;
+    position: absolute;
     left: 22%;
     top: 50%;
     display: block;
@@ -377,9 +387,9 @@ body.sogra {
 }
 
 h1.sogra {
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 90%;
+    width: auto;
     color: rgb(11, 252, 252);
     font-family: 'Oswald', sans-serif;
     transform: translate(-50%, -100%);
@@ -400,6 +410,29 @@ h1.despues.sogra {
 }
 
 h1.wow.sogra {
-    top: 50%;
+    top: 40%;
     font-size: 50px;
+}
+
+.container-cookie {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 300px;
+}
+
+img.passatempo {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+}
+
+h1.peca {
+    position: relative;
+    top: 10px;
 }
